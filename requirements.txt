@@ -1,0 +1,16 @@
+sklearn
+scipy
+numpy
+pandas
+matplotlib
+seaborn
+cartoframes==1.0b1 --pre
+shapely
+geopandas
+tqdm
+missingno
+ipywidgets
+jupyter_contrib_nbextensions
+supermercado
+pygeotile
+pysal==1.14.4
