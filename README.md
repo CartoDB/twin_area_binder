@@ -1,6 +1,10 @@
 # Twin Area
 
-**Lite version: ** [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/CartoDB/twin_area_binder/master?filepath=index.ipynb)
+
+
+**Lite Version: **
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/CartoDB/twin_area_binder/master?filepath=index.ipynb)
 
 
 
@@ -21,8 +25,7 @@
 
 
 There are three tabs demonstrating the results. 
-
-1. 1. The first tab shows the Target Neighborhood from Source City as well as histograms of interested features (red line represents the value for the selected neighborhood). Also, the histogram will be updated accordingly as you change the feature in the dropdown widget. If there's no histogram showing up, it means the source zone has Null value for the selected feature. ![](demo3.png)
+   1. The first tab shows the Target Neighborhood from Source City as well as histograms of interested features (red line represents the value for the selected neighborhood). Also, the histogram will be updated accordingly as you change the feature in the dropdown widget. If there's no histogram showing up, it means the source zone has Null value for the selected feature. ![](demo3.png)
    2. The second tab shows the top K Similar (Twin) Areas. ![](demo4.png)
    3. The third tab shows the result from hotspot analysis. In short, the hotspots mean the areas where grid cells with high similarity scores are concentrated.  ![](demo5.png)
 
@@ -39,4 +42,3 @@ Tips:
 
 1. Feel free to change the **cartoframes** Map styling inside binder notebook as well as widget layout settings.
 2. Update/Add/Delete Sourc Zone options in `lite_cities.txt` -> Create a branch -> launch a [**Binder**](https://gke.mybinder.org/) from the new branch
-
