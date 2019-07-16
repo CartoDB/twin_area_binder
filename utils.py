@@ -200,7 +200,7 @@ def calc_ens_pc(data, selected_col_prep, source:str, target:str, n_ens_member=10
     if seed:
         random.seed(seed)
         
-    for i in tqdm(range(n_ens_member)):
+    for i in range(n_ens_member):
         data_pre = data.copy()
         data_prep = data_prep[data_prep.tag.isin([source, target])]
         n = np.random.randint(ens_pca_min, ens_pca_max)
