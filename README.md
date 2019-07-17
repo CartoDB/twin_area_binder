@@ -35,10 +35,12 @@ Caveates:
 
 1. The analysis may take 1-2 minutes for its first run. Since it will cache the similarity scores based on the selected feature set. If you add/delete features, it will start from the beginning and re-compute the scores. Otherwise, if you only change the zones within the saved pair of cities, it will load the cached scores from previous run, which may save plenty of time. 
 2. As a Lite version, only keep 10 zones as **Source Zone**(s) for each city (Madrid, Bacelona, NYC & LA). The list is saved in `lite_cities.txt`
+3. In terms of the data we are using, POI data for NYC only covers Manhattan, not the whole NYC. we plan to update the data in the near future. 
 
 
 
 Tips:
 
-1. Feel free to change the **cartoframes** Map styling inside binder notebook as well as widget layout settings.
+1. Feel free to change the **cartoframes** Map styling inside binder notebook as well as widget layout settings. 
 2. Update/Add/Delete Sourc Zone options in `lite_cities.txt` -> Create a branch -> launch a [**Binder**](https://gke.mybinder.org/) from the new branch
+3. Due to the limitation of Binder, if the kernel doesn't respond, click `restart kernel` and rerun all cells. 
