@@ -203,7 +203,10 @@ def calc_ens_pc(data, selected_col_prep, source:str, target:str, n_ens_member=10
     for i in range(n_ens_member):
         data_pre = data.copy()
         data_prep = data_prep[data_prep.tag.isin([source, target])]
-        n = np.random.randint(ens_pca_min, ens_pca_max)
+        if ens_pca_min == ens_pca_max:
+            n = ens_pca_min
+        else:
+            n = np.random.randint(ens_pca_min, ens_pca_max)
         logging.info(n)
         #n = random.choices(list(range(ens_pca_min, ens_pca_max+1)), weights=np.cumsum(complete_explained_variance)[ens_pca_min-1:ens_pca_max])[0]
         
